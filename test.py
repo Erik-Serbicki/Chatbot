@@ -50,13 +50,14 @@ def predict(sentence):
     return " ".join([vocab[each] for each in prediction])
 
 def main():
+    print("Hi! I am the artificial intelligence version of Erik! Ask me anything.")
     while True:
         question = input()
         if question == "exit":
             break
         else:
             pred = predict(question)
-            print(pred)
+            print(f'Erik: {pred}')
 
 main()
         
